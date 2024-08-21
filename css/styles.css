@@ -44,7 +44,9 @@ input {
 .bg-gray {
     background-color: #F1F1F1;
 }
-
+.bg-input{
+    background-color: #F8F8F8;
+}
 /* text color */
 .text-main {
     color: #293268;
@@ -107,7 +109,9 @@ input {
 .fs-24 {
     font-size: 24px;
 }
-
+.fs-32 {
+    font-size: 32px;
+}
 .fs-40 {
     font-size: 40px;
 }
@@ -117,13 +121,19 @@ input {
 }
 
 /* max width */
-
+ .max-w-620{
+    max-width: 620px;
+    width: 100%;
+ }
 /* width */
 .w-26 {
     width: 26px !important;
 }
 .w-35 {
     width: 35px !important;
+}
+.w-40 {
+    width: 40px !important;
 }
 .w-46 {
     width: 46px !important;
@@ -132,7 +142,9 @@ input {
 .w-47 {
     width: 47% !important;
 }
-
+.w-64 {
+    width: 64px !important;
+}
 .w-65 {
     width: 65px !important;
 }
@@ -140,8 +152,13 @@ input {
 .w-90 {
     width: 90px !important;
 }
-
+.w-190 {
+    width: 190px !important;
+}
 /* height */
+.h-5 {
+    height: 5px;
+}
 .h-26 {
     height: 26px;
 }
@@ -151,7 +168,12 @@ input {
 .h-46 {
     height: 46px;
 }
-
+.h-60 {
+    height: 60px;
+}
+.h-64 {
+    height: 64px;
+}
 .h-77 {
     height: 77px;
 }
@@ -163,7 +185,10 @@ input {
 .h-470 {
     height: 470px;
 }
-
+/* shadow */
+.shadow-1{
+    box-shadow: 6px 6px 50px 5px #0000001F;
+}
 /* rotate */
 .-rotate-180 {
     transform: rotate(-180deg);
@@ -182,13 +207,20 @@ input {
 .rounded-3px {
     border-radius: 3px;
 }
-
+.rounded-5 {
+    border-radius: 5px;
+}
 .rounded-br-9 {
     border-bottom-right-radius: 9px;
 }
-
+.rounded-10 {
+    border-radius: 10px;
+}
 .rounded-12 {
     border-radius: 12px;
+}
+.rounded-16 {
+    border-radius: 16px;
 }
 .rounded-20 {
     border-radius: 20px;
@@ -216,11 +248,23 @@ input {
 }
 
 /* bottom */
+.bottom-8 {
+    bottom: 8px;
+}
 .-bottom-18 {
     bottom: -18px;
 }
 .bottom-27 {
     bottom: 27px;
+}
+.-bottom-40 {
+    bottom: -40px;
+}
+.bottom-47 {
+    bottom: 47px;
+}
+.-bottom-70 {
+    bottom: -70px;
 }
 /* top */
 .top-auto {
@@ -267,7 +311,12 @@ input {
 .right-51 {
     right: 51px !important;
 }
-
+.-right-80 {
+    right: -80px;
+}
+.-right-140 {
+    right: -140px;
+}
 .right-140 {
     right: 140px !important;
 }
