@@ -36,7 +36,12 @@ input {
 .bg-main {
     background-color: #0B49DC;
 }
-
+.bg-main2{
+    background-color: #051F5C;
+}
+.bg-main3{
+    background-color: #131944;
+}
 .bg-second {
     background-color: #EA9117 !important;
 }
@@ -129,6 +134,9 @@ input {
 .w-26 {
     width: 26px !important;
 }
+.w-32 {
+    width: 32px !important;
+}
 .w-35 {
     width: 35px !important;
 }
@@ -141,6 +149,9 @@ input {
 
 .w-47 {
     width: 47% !important;
+}
+.w-52 {
+    width: 52px !important;
 }
 .w-64 {
     width: 64px !important;
@@ -162,11 +173,20 @@ input {
 .h-26 {
     height: 26px;
 }
+.h-32 {
+    height: 32px;
+}
 .h-35 {
     height: 35px;
 }
+.h-38 {
+    height: 38px;
+}
 .h-46 {
     height: 46px;
+}
+.h-52 {
+    height: 52px;
 }
 .h-60 {
     height: 60px;
@@ -177,7 +197,9 @@ input {
 .h-77 {
     height: 77px;
 }
-
+.h-80 {
+    height: 80px;
+}
 .h-140 {
     height: 140px;
 }
@@ -207,6 +229,9 @@ input {
 .rounded-3px {
     border-radius: 3px;
 }
+.rounded-4 {
+    border-radius: 4px;
+}
 .rounded-5 {
     border-radius: 5px;
 }
@@ -234,7 +259,9 @@ input {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
+.rounded-28 {
+    border-radius: 28px;
+}
 .rounded-tr-34 {
     border-top-right-radius: 34px;
 }
