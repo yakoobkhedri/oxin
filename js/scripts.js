@@ -46,8 +46,8 @@ var category= new Swiper(".category", {
     delay: 2500,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
   },
 });
 var services= new Swiper(".services", {
@@ -67,5 +67,28 @@ var services= new Swiper(".services", {
   },
   autoplay: {
     delay: 2500,
+  },
+});
+var priceList= new Swiper(".priceList", {
+  loop: true,
+  spaceBetween: 48,
+  slidesPerView: 2,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 6,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });

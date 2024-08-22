@@ -42,6 +42,9 @@ input {
 .bg-main3{
     background-color: #131944;
 }
+.bg-main4{
+    background-color: #f4f7fe;
+}
 .bg-second {
     background-color: #EA9117 !important;
 }
@@ -150,6 +153,9 @@ input {
 .w-47 {
     width: 47% !important;
 }
+.w-48 {
+    width: 48px !important;
+}
 .w-52 {
     width: 52px !important;
 }
@@ -203,13 +209,21 @@ input {
 .h-140 {
     height: 140px;
 }
-
+.h-450 {
+    height: 450px;
+}
 .h-470 {
     height: 470px;
+}
+.h-475 {
+    height: 475px;
 }
 /* shadow */
 .shadow-1{
     box-shadow: 6px 6px 50px 5px #0000001F;
+}
+.shadow-2{
+    box-shadow: 0px 0px 30px 0px #0000001F;
 }
 /* rotate */
 .-rotate-180 {
@@ -223,8 +237,6 @@ input {
  .border-2-purple{
     border: 2px solid #E7EDFC80;
  }
-/* shadow */
-
 /* rounded */
 .rounded-3px {
     border-radius: 3px;
@@ -258,6 +270,9 @@ input {
 .rounded-l-20 {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+.rounded-25{
+    border-radius: 25px;
 }
 .rounded-28 {
     border-radius: 28px;
@@ -352,7 +367,10 @@ input {
 .outline-none {
     outline: none;
 }
-
+/* overflow */
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
 /* hover */
 
 .button-hover-2 {
@@ -399,16 +417,31 @@ input {
     content: none !important;
 }
 
-#category .swiper-button-next {
+#category .swiper-button-next2 {
     right: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-#category .swiper-button-prev {
+#priceList .swiper-button-next {
+    right: -20px;
+}
+#category .swiper-button-prev2 {
     left: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-#category .swiper-button-next,
-#category .swiper-button-prev {
+#category .swiper-button-prev2,#category .swiper-button-next2 {
+    top: 44%;
+}
+#priceList .swiper-button-prev{
+    left: -20px;
+}
+#category .swiper-button-next2,
+#category .swiper-button-prev2,
+#priceList .swiper-button-next,
+#priceList .swiper-button-prev {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -417,19 +450,28 @@ input {
     transition: all .4s;
 }
 
-#category .swiper-button-next:hover,
-#category .swiper-button-prev:hover,
-#category .swiper-slide:hover > div {
+#category .swiper-button-next2:hover,
+#category .swiper-button-prev2:hover,
+#category .swiper-slide:hover > div,
+#priceList .swiper-button-next:hover,
+#priceList .swiper-button-prev:hover {
     background-color: #ea9117;
 }
-
-#category .swiper-button-next:hover::after,
-#category .swiper-button-prev:hover::after {
+#category .swiper-button-next2:hover path,
+#category .swiper-button-prev2:hover path{
+  stroke: white;
+}
+#category .swiper-button-next2:hover::after,
+#category .swiper-button-prev2:hover::after,
+#priceList .swiper-button-next:hover::after,
+#priceList .swiper-button-prev:hover::after {
     color: white;
 }
 
-#category .swiper-button-next::after,
-#category .swiper-button-prev::after {
+#category .swiper-button-next2::after,
+#category .swiper-button-prev2::after,
+#priceList .swiper-button-next::after,
+#priceList .swiper-button-prev::after {
     color: black;
     font-size: 20px;
     font-weight: bold;
@@ -444,6 +486,18 @@ input {
 .services .swiper-slide:hover > div{
     border: 1px solid #ea9117;
 }
+#priceList .swiper-slide p.first{
+    display: none;
+}
+#priceList .swiper-slide:hover p.first{
+    display: block;
+}
+#priceList .swiper-slide:hover p{
+    color: #0B49DC;
+}
+#priceList .swiper-slide:hover path{
+    fill: #0B49DC;
+}
 /* steps */
 #steps{
     background-image: url('../img/background.png');
@@ -451,5 +505,28 @@ input {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* scrollbar  */
+#scroll-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #0B49DC white;
+  }
+  #scroll-custom::-webkit-scrollbar {
+    background-color: #E3E3E3;
+    width: 4px;
+  }
+  #scroll-custom::-webkit-scrollbar-track {
+    border-radius: 100vw;
+    background-color: white;
+    margin-block: .5em;
+    margin-inline: 1em;
+  }
+  
+  #scroll-custom::-webkit-scrollbar-thumb {
+    border-radius: 37px;
+    background-color: #0B49DC;
+    border-radius: 2rem !important;
+    border: 0.3rem solid #1e1f22 !important;
+  }
 /* responsive */
 @media only screen and (max-width:1400px) {}
