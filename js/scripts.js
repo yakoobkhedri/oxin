@@ -92,3 +92,15 @@ var priceList= new Swiper(".priceList", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// go to up
+
+window.addEventListener('scroll',()=>{
+  if (window.scrollY>150) {
+    document.getElementById('goToUp').style.opacity='100';
+    document.getElementById('goToUp').style.visibility='visible';
+  } else {
+    document.getElementById('goToUp').style.opacity='0';
+    document.getElementById('goToUp').style.visibility='hidden';
+  }
+})

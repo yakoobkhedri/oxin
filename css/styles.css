@@ -133,6 +133,10 @@ input {
     max-width: 620px;
     width: 100%;
  }
+ .max-w-1200{
+    max-width: 1200px;
+    width: 100%;
+ }
  /* width */
  .w-26 {
      width: 26px !important;
@@ -145,6 +149,9 @@ input {
 }
 .w-40 {
     width: 40px !important;
+}
+.w-42 {
+    width: 42px !important;
 }
 .w-46 {
     width: 46px !important;
@@ -190,6 +197,9 @@ input {
 }
 .h-38 {
     height: 38px;
+}
+.h-42 {
+    height: 42px;
 }
 .h-46 {
     height: 46px;
@@ -382,11 +392,29 @@ input {
 }
 /* hover */
 
-.button-hover-2 {
+.button-hover-2 ,.button-hover-1{
     position: relative;
     overflow: hidden;
 }
-
+.button-hover-3 {
+    position: fixed;
+    overflow: hidden;
+}
+.button-hover-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    background: #ea9117;
+    border-radius: 50%;
+    transform-origin: top center;
+    transform: translateX(-50%) translateY(-5%) scale(0.4);
+    transition: transform 0.9s;
+}
 .button-hover-2::before {
     content: "";
     position: absolute;
@@ -403,16 +431,21 @@ input {
     transition: transform 0.9s;
 }
 
-.button-hover-2:hover::before {
+.button-hover-2:hover::before,.button-hover-1:hover::before {
     transition: transform 1s;
     transform: translateX(-45%) translateY(0) scale(1);
     transform-origin: bottom center;
 }
 
-.button-hover-2 * {
+.button-hover-2 *,.button-hover-1 * {
     position: relative;
 }
-
+.blog-hover:hover h2,footer ul li:hover a,.second-hover:hover{
+    color: #ea9117 !important;
+}
+.social-hover:hover svg path{
+    fill: #131944;
+}
 /* global styles */
 .cursor {
     cursor: pointer;
@@ -519,6 +552,12 @@ input {
     transition: all .4s;
     top: 50px;
 }
+header ul li:hover,header ul .dropdownMenu a:hover{
+    color: #0B49DC!important;
+}
+header ul .dropdownMenu a:hover svg path{
+    fill: #0B49DC!important;
+}
 /* steps */
 #steps{
     background-image: url('../img/background.png');
@@ -548,6 +587,11 @@ input {
     background-color: #0B49DC;
     border-radius: 2rem !important;
     border: 0.3rem solid #1e1f22 !important;
+  }
+  /* goToUp */
+  #goToUp{
+    opacity: 0;
+    visibility: hidden;
   }
 /* responsive */
 @media only screen and (max-width:1400px) {}
