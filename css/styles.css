@@ -241,6 +241,9 @@ input {
 .shadow-3{
     box-shadow: 0px 0px 30px 0px #00000026;
 }
+.shadow-4{
+    box-shadow: 0px 4px 20px 0px #0000000D;
+}
 /* rotate */
 .-rotate-180 {
     transform: rotate(-180deg);
@@ -453,6 +456,13 @@ input {
 .text-justify{
     text-align: justify;
 }
+.form-check-input:checked {
+    background-color: #EA9117;
+    border-color: #EA9117;
+  }
+  .form-check-input:focus {
+    box-shadow: none;
+  }
 /* swiper */
 #banner .swiper-button-next::after,
 #banner .swiper-button-prev::after {
