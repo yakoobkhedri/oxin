@@ -51,7 +51,100 @@ function createChart() {
             dataRefreshRate: parseInt(pollingInput.value, 10)
         }
     });
-
+    Highcharts.chart('container2', {
+        chart: {
+            type: 'areaspline'
+        },
+        title: {
+            text: ''
+        },
+        accessibility: {
+            announceNewData: {
+                enabled: true,
+                minAnnounceInterval: 15000,
+                announcementFormatter: function (
+                    allSeries,
+                    newSeries,
+                    newPoint
+                ) {
+                    if (newPoint) {
+                        return 'New point added. Value: ' + newPoint.y;
+                    }
+                    return false;
+                }
+            }
+        },
+        plotOptions: {
+            areaspline: {
+                color: '#3354F4',
+                fillColor: {
+                    linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                    stops: [
+                        [0, '#3354F4'],
+                        [1, '#3354F400']
+                    ]
+                },
+                threshold: null,
+                marker: {
+                    lineWidth: 2,
+                    lineColor: 'white',
+                    fillColor: '#ea9117'
+                }
+            }
+        },
+        data: {
+            csvURL: urlInput.value,
+            enablePolling: pollingCheckbox.checked === true,
+            dataRefreshRate: parseInt(pollingInput.value, 10)
+        }
+    });
+    Highcharts.chart('container3', {
+        chart: {
+            type: 'areaspline'
+        },
+        title: {
+            text: ''
+        },
+        accessibility: {
+            announceNewData: {
+                enabled: true,
+                minAnnounceInterval: 15000,
+                announcementFormatter: function (
+                    allSeries,
+                    newSeries,
+                    newPoint
+                ) {
+                    if (newPoint) {
+                        return 'New point added. Value: ' + newPoint.y;
+                    }
+                    return false;
+                }
+            }
+        },
+        plotOptions: {
+            areaspline: {
+                color: '#3354F4',
+                fillColor: {
+                    linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                    stops: [
+                        [0, '#3354F4'],
+                        [1, '#3354F400']
+                    ]
+                },
+                threshold: null,
+                marker: {
+                    lineWidth: 2,
+                    lineColor: 'white',
+                    fillColor: '#ea9117'
+                }
+            }
+        },
+        data: {
+            csvURL: urlInput.value,
+            enablePolling: pollingCheckbox.checked === true,
+            dataRefreshRate: parseInt(pollingInput.value, 10)
+        }
+    });
     if (pollingInput.value < 1 || !pollingInput.value) {
         pollingInput.value = 1;
     }

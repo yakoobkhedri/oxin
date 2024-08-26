@@ -45,6 +45,9 @@ input {
 .bg-main4{
     background-color: #f4f7fe;
 }
+.bg-main5{
+    background-color: #8FABEF;
+}
 .bg-second {
     background-color: #EA9117 !important;
 }
@@ -129,8 +132,16 @@ input {
 }
 
 /* max width */
+.max-w-224{
+    max-width: 224px;
+    width: 100%;
+ }
  .max-w-620{
     max-width: 620px;
+    width: 100%;
+ }
+ .max-w-979{
+    max-width: 979px;
     width: 100%;
  }
  .max-w-1200{
@@ -222,6 +233,9 @@ input {
 .h-140 {
     height: 140px;
 }
+.h-213 {
+    height: 213px;
+}
 .h-450 {
     height: 450px;
 }
@@ -273,7 +287,7 @@ input {
     border-radius: 10px;
 }
 .rounded-12 {
-    border-radius: 12px;
+    border-radius: 12px!important;
 }
 .rounded-16 {
     border-radius: 16px;
@@ -299,7 +313,9 @@ input {
 .rounded-tr-34 {
     border-top-right-radius: 34px;
 }
-
+.rounded-43{
+    border-radius: 43px;
+}
 .rounded-tr-112 {
     border-top-right-radius: 112px;
 }
@@ -597,6 +613,16 @@ header ul .dropdownMenu a:hover svg path{
     background-color: #0B49DC;
     border-radius: 2rem !important;
     border: 0.3rem solid #1e1f22 !important;
+  }
+  /* tabs */
+  .nav-pills .nav-link.active{
+    color: white!important;
+    background-color: #EA9117;
+    border-radius: 12px!important;
+  }
+  #loginModal .nav-pills .nav-link.active{
+    border-radius: 50rem !important;
+    background-color: #0B49DC;
   }
   /* goToUp */
   #goToUp{

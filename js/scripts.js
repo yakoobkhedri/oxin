@@ -80,7 +80,7 @@ var priceList= new Swiper(".priceList", {
     992: {
       slidesPerView: 4,
     },
-    1200: {
+    1300: {
       slidesPerView: 6,
     }
   },
