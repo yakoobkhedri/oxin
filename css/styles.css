@@ -92,6 +92,9 @@ input {
 
 
 /* margin */
+.m-18{
+    margin: 18px;
+}
 .-mt-167 {
     margin-top: -167px;
 }
@@ -186,6 +189,9 @@ input {
 
 .w-90 {
     width: 90px !important;
+}
+.w-160 {
+    width: 160px !important;
 }
 .w-190 {
     width: 190px !important;
