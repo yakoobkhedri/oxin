@@ -70,9 +70,13 @@ var services= new Swiper(".services", {
 });
 var priceList= new Swiper(".priceList", {
   loop: true,
-  spaceBetween: 48,
-  slidesPerView: 2,
+  spaceBetween: 18,
+  slidesPerView: 6,
   breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 48,
+    },
     768: {
       slidesPerView: 3,
     },

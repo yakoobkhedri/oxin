@@ -650,11 +650,26 @@ header ul .dropdownMenu a:hover svg path{
     .fs-md-10{
         font-size:10px;
     }
+    .fs-md-12{
+        font-size:12px;
+    }
+    .fs-md-14{
+        font-size:14px;
+    }
+    .w-md-36{
+        width: 36%;
+    }
     .h-md-auto{
         height: auto;
     }
 }
 @media only screen and (max-width:576px) {
+    .w-sm-12{
+        width: 12px;
+    }
+    .w-sm-26{
+        width: 26px!important;
+    }
     .w-sm-28{
         width: 28px!important;
     }
@@ -664,8 +679,23 @@ header ul .dropdownMenu a:hover svg path{
     .fs-sm-12{
         font-size:12px;
     }
+    .fs-sm-10{
+        font-size:10px;
+    }
     .fs-sm-8{
         font-size:8px;
+    }
+    .h-sm-16{
+        height: 16px;
+    }
+    .h-sm-142{
+        height: 142px;
+    }
+    .h-sm-260{
+        height: 260px;
+    }
+    .rounded-sm-12{
+        border-radius: 12px!important;
     }
     .rounded-sm-0{
         border-radius: 0!important;
