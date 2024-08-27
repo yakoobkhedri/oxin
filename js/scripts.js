@@ -1,13 +1,14 @@
 // swiper
 var livePriceSwiper= new Swiper(".livePriceSwiper", {
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 10,
   slidesPerView: 2,
   breakpoints: {
-    768: {
+    992: {
       slidesPerView: 3.2,
+      spaceBetween: 20,
     },
-    1200: {
+    1400: {
       slidesPerView: 4.3,
     }
   },
@@ -29,14 +30,12 @@ var banner= new Swiper(".banner", {
 });
 var category= new Swiper(".category", {
   loop: true,
-  spaceBetween: 30,
-  slidesPerView: 1,
+  spaceBetween: 16,
+  slidesPerView: 2.8,
   breakpoints: {
     768: {
-      slidesPerView: 2,
-    },
-    992: {
       slidesPerView: 3,
+      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 4,

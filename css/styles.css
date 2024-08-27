@@ -95,8 +95,8 @@ input {
 .m-18{
     margin: 18px;
 }
-.-mt-167 {
-    margin-top: -167px;
+.-mt-255 {
+    margin-top: -255px;
 }
 
 /* font size */
@@ -129,7 +129,9 @@ input {
 .fs-40 {
     font-size: 40px;
 }
-
+.fs-56 {
+    font-size: 56px;
+}
 .fs-64 {
     font-size: 64px;
 }
@@ -186,7 +188,9 @@ input {
 .w-65 {
     width: 65px !important;
 }
-
+.w-70 {
+    width: 70px !important;
+}
 .w-90 {
     width: 90px !important;
 }
@@ -230,6 +234,9 @@ input {
 .h-64 {
     height: 64px;
 }
+.h-70 {
+    height: 70px;
+}
 .h-77 {
     height: 77px;
 }
@@ -263,6 +270,9 @@ input {
 }
 .shadow-4{
     box-shadow: 0px 4px 20px 0px #0000000D;
+}
+.shadow-5{
+    box-shadow: 0px 28px 24px -10px #95A3FA40;
 }
 /* rotate */
 .-rotate-180 {
@@ -636,4 +646,28 @@ header ul .dropdownMenu a:hover svg path{
     visibility: hidden;
   }
 /* responsive */
-@media only screen and (max-width:1400px) {}
+@media only screen and (max-width:768px) {
+    .fs-md-10{
+        font-size:10px;
+    }
+    .h-md-auto{
+        height: auto;
+    }
+}
+@media only screen and (max-width:576px) {
+    .w-sm-28{
+        width: 28px!important;
+    }
+    .fs-sm-20{
+        font-size:20px;
+    }
+    .fs-sm-12{
+        font-size:12px;
+    }
+    .fs-sm-8{
+        font-size:8px;
+    }
+    .rounded-sm-0{
+        border-radius: 0!important;
+    }
+}
