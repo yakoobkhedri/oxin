@@ -646,6 +646,14 @@ header ul .dropdownMenu a:hover svg path{
     visibility: hidden;
   }
 /* responsive */
+@media only screen and (max-width:992px) {
+   .rotate-lg-270{
+    transform: rotate(270deg)
+   }
+   .rotate-lg-90{
+    transform: rotate(90deg)
+   }
+}
 @media only screen and (max-width:768px) {
     .fs-md-10{
         font-size:10px;
@@ -656,11 +664,26 @@ header ul .dropdownMenu a:hover svg path{
     .fs-md-14{
         font-size:14px;
     }
+    .fs-md-18{
+        font-size:18px;
+    }
     .w-md-36{
         width: 36%;
     }
+    .w-md-112{
+        width: 112px!important;
+    }
+    .w-md-114{
+        width: 114px!important;
+    }
     .h-md-auto{
         height: auto;
+    }
+    .h-md-45{
+        height: 45px;
+    }
+    .top-md-82{
+        top: 82px;
     }
 }
 @media only screen and (max-width:576px) {
@@ -673,8 +696,20 @@ header ul .dropdownMenu a:hover svg path{
     .w-sm-28{
         width: 28px!important;
     }
+    .w-sm-14{
+        width: 14px!important;
+    }
+    .w-sm-32{
+        width: 32px!important;
+    }
     .fs-sm-20{
         font-size:20px;
+    }
+    .fs-sm-16{
+        font-size:16px;
+    }
+    .fs-sm-14{
+        font-size:14px;
     }
     .fs-sm-12{
         font-size:12px;
@@ -688,6 +723,9 @@ header ul .dropdownMenu a:hover svg path{
     .h-sm-16{
         height: 16px;
     }
+    .h-sm-32{
+        height: 32px;
+    }
     .h-sm-142{
         height: 142px;
     }
@@ -699,5 +737,8 @@ header ul .dropdownMenu a:hover svg path{
     }
     .rounded-sm-0{
         border-radius: 0!important;
+    }
+    .text-smm-center{
+        text-align: center!important;
     }
 }

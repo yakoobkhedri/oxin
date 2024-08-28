@@ -30,12 +30,12 @@ var banner= new Swiper(".banner", {
 });
 var category= new Swiper(".category", {
   loop: true,
-  spaceBetween: 16,
+  spaceBetween: 30,
   slidesPerView: 2.8,
   breakpoints: {
     768: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 16,
     },
     1200: {
       slidesPerView: 4,
