@@ -17,11 +17,18 @@ var livePriceSwiper= new Swiper(".livePriceSwiper", {
   }
 });
 var banner= new Swiper(".banner", {
-  loop: true,
   spaceBetween: 20,
-  slidesPerView: 1,
+  slidesPerView: 1.6,
   autoplay: {
     delay: 2500,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.8,
+    },
+    992: {
+      slidesPerView: 1,
+    },
   },
   navigation: {
     nextEl: ".swiper-button-next",

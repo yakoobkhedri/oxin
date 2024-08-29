@@ -249,6 +249,9 @@ input {
 .h-213 {
     height: 213px;
 }
+.h-385 {
+    height: 385px;
+}
 .h-450 {
     height: 450px;
 }
@@ -561,13 +564,22 @@ input {
     font-weight: bold;
     transition: all .4s;
 }
-#category .swiper-slide:hover h2,.services .swiper-slide:hover h3,.services .swiper-slide:hover p{
+#category .swiper-slide:hover h2,
+.services .swiper-slide:hover h3,
+.services2 .swiper-slide:hover h3,
+.services .swiper-slide:hover p,
+.services2 .swiper-slide:hover p
+{
     color: #ea9117;
 }
-.services .swiper-slide:hover path{
+.services .swiper-slide:hover path,
+.services2 .swiper-slide:hover path
+{
     fill: #ea9117;
 }
-.services .swiper-slide:hover > div{
+.services .swiper-slide:hover > div,
+.services2 .swiper-slide:hover > div
+{
     border: 1px solid #ea9117;
 }
 #priceList .swiper-slide p.first{
@@ -646,12 +658,41 @@ header ul .dropdownMenu a:hover svg path{
     visibility: hidden;
   }
 /* responsive */
+@media only screen and (max-width:1200px) {
+  .fs-xl-45{
+    font-size: 45px;
+  }
+}
 @media only screen and (max-width:992px) {
    .rotate-lg-270{
     transform: rotate(270deg)
    }
    .rotate-lg-90{
     transform: rotate(90deg)
+   }
+   .position-lg-static{
+    position: static!important;
+   }
+   .rounded-tl-lg-20{
+    border-top-left-radius: 20px;
+   }
+   .w-lg-100{
+    width: 100%!important;
+   }
+   .w-lg-230{
+    width: 230px!important;
+   }
+   .h-lg-328{
+    height: 328px!important;
+   }
+   .-mt-lg-223{
+    margin-top: -223px;
+   }
+   .fs-lg-14{
+    font-size: 14px;
+   }
+   .-top-lg-29{
+    top: -29px;
    }
 }
 @media only screen and (max-width:768px) {
@@ -690,17 +731,23 @@ header ul .dropdownMenu a:hover svg path{
     .w-sm-12{
         width: 12px;
     }
+    .w-sm-14{
+        width: 14px!important;
+    }
     .w-sm-26{
         width: 26px!important;
     }
     .w-sm-28{
         width: 28px!important;
     }
-    .w-sm-14{
-        width: 14px!important;
-    }
     .w-sm-32{
         width: 32px!important;
+    }
+    .w-sm-170{
+        width: 170px!important;
+    }
+    .fs-sm-24{
+        font-size:24px;
     }
     .fs-sm-20{
         font-size:20px;
@@ -732,11 +779,17 @@ header ul .dropdownMenu a:hover svg path{
     .h-sm-260{
         height: 260px;
     }
+    .h-sm-279{
+        height: 279px!important;
+    }
     .rounded-sm-12{
         border-radius: 12px!important;
     }
     .rounded-sm-0{
         border-radius: 0!important;
+    }
+    .-mt-sm-151{
+        margin-top: -151px;
     }
     .text-smm-center{
         text-align: center!important;
