@@ -38,7 +38,7 @@ var banner= new Swiper(".banner", {
 var category= new Swiper(".category", {
   loop: true,
   spaceBetween: 30,
-  slidesPerView: 2.8,
+  slidesPerView: 2.4,
   breakpoints: {
     768: {
       slidesPerView: 3,
@@ -78,14 +78,10 @@ var services= new Swiper(".services", {
 var priceList= new Swiper(".priceList", {
   loop: true,
   spaceBetween: 18,
-  slidesPerView: 6,
+  slidesPerView: 3,
   breakpoints: {
     576: {
-      slidesPerView: 3,
-      spaceBetween: 48,
-    },
-    768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     992: {
       slidesPerView: 4,
