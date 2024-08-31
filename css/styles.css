@@ -659,6 +659,9 @@ header ul .dropdownMenu a:hover svg path{
   }
 /* responsive */
 @media only screen and (max-width:1200px) {
+    .fs-xl-14{
+        font-size: 14px;
+      }
   .fs-xl-45{
     font-size: 45px;
   }
@@ -743,6 +746,9 @@ header ul .dropdownMenu a:hover svg path{
     .w-sm-32{
         width: 32px!important;
     }
+    .w-sm-125{
+        width: 125px!important;
+    }
     .w-sm-170{
         width: 170px!important;
     }
@@ -772,6 +778,9 @@ header ul .dropdownMenu a:hover svg path{
     }
     .h-sm-32{
         height: 32px;
+    }
+    .h-sm-88{
+        height: 88px;
     }
     .h-sm-142{
         height: 142px;
