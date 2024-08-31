@@ -697,6 +697,12 @@ header ul .dropdownMenu a:hover svg path{
    .-top-lg-29{
     top: -29px;
    }
+   .right-lg-0{
+    right: 0;
+   }
+   .right-lg-61{
+    right: -61px;
+   }
 }
 @media only screen and (max-width:768px) {
     .fs-md-10{
@@ -728,6 +734,9 @@ header ul .dropdownMenu a:hover svg path{
     }
     .top-md-82{
         top: 82px;
+    }
+    .right-md-15{
+        right: -15px;
     }
 }
 @media only screen and (max-width:576px) {
