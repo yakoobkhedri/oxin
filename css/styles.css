@@ -288,7 +288,6 @@ input {
 .-rotate-180 {
     transform: rotate(-180deg);
 }
-
 /* border */
 .border-main{
     border: 1px solid #08349C;
@@ -505,6 +504,25 @@ input {
   .form-check-input:focus {
     box-shadow: none;
   }
+
+/* accordion */
+
+.accordionBtn img {
+    transition: all .4s;
+}
+.accordionBtn img.active {
+    transform: rotate(0deg);
+}
+.accordionContent{
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+.accordionContent.active{
+    max-height: 2000px;
+}
+
 /* swiper */
 #banner .swiper-button-next::after,
 #banner .swiper-button-prev::after {
@@ -613,10 +631,15 @@ input {
     transition: all .4s;
     top: 50px;
 }
-header ul li:hover,header ul .dropdownMenu a:hover{
+header ul li:hover,
+header ul .dropdownMenu a:hover,
+.mobileMenu a:hover
+{
     color: #0B49DC!important;
 }
-header ul .dropdownMenu a:hover svg path{
+header ul .dropdownMenu a:hover svg path,
+.mobileMenu a:hover svg path
+{
     fill: #0B49DC!important;
 }
 /* steps */

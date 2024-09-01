@@ -99,6 +99,17 @@ var priceList= new Swiper(".priceList", {
   },
 });
 
+// accordion
+
+let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
+
+accordionBtn.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.nextElementSibling.classList.toggle('active');
+    item.querySelector('img').classList.toggle('active');
+  })
+})
+
 // go to up
 
 window.addEventListener('scroll',()=>{
