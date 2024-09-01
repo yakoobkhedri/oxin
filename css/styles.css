@@ -144,6 +144,10 @@ input {
     max-width: 224px;
     width: 100%;
  }
+ .max-w-284{
+    max-width: 284px;
+    width: 100%;
+ }
  .max-w-620{
     max-width: 620px;
     width: 100%;
