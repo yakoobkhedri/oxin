@@ -73,6 +73,9 @@ input {
 .text-second{
     color: #EA9117;
 }
+.text-dark2{
+    color: black;
+}
 /* cursor */
 .cursor {
     cursor: pointer;
@@ -631,14 +634,36 @@ input {
     transition: all .4s;
     top: 50px;
 }
+.tabContent > div,.tabContent2 > div{
+    display: none!important;
+}
+.tabContent > div.active,.tabContent2 > div.active{
+    display: block!important;
+}
 header ul li:hover,
-header ul .dropdownMenu a:hover,
-.mobileMenu a:hover
+header ul .dropdownMenu > a:hover,
+.mobileMenu a:hover,
+.tabs:hover,
+header ul li.active,
+header ul .dropdownMenu > a.active,
+.mobileMenu a.active,
+.tabs.activeو
+.tabs2.active
 {
     color: #0B49DC!important;
 }
-header ul .dropdownMenu a:hover svg path,
-.mobileMenu a:hover svg path
+header ul .dropdownMenu > a:hover svg path,
+.mobileMenu a:hover svg path,
+.tabs:hover svg path,
+.tabs2:hover svg path
+
+{
+    fill: #0B49DC!important;
+}
+header ul .dropdownMenu > a.active svg path,
+.mobileMenu a.active svg path,
+.tabs.active svg path,
+.tabs2.active svg path
 {
     fill: #0B49DC!important;
 }
