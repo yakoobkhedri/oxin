@@ -93,7 +93,9 @@ input {
 .z-10 {
     z-index: 10;
 }
-
+.z-20 {
+    z-index: 20;
+}
 /* padding */
 
 
@@ -288,6 +290,9 @@ input {
     box-shadow: 0px 28px 24px -10px #95A3FA40;
 }
 /* rotate */
+.rotate-90 {
+    transform: rotate(90deg);
+}
 .-rotate-180 {
     transform: rotate(-180deg);
 }
@@ -510,11 +515,11 @@ input {
 
 /* accordion */
 
-.accordionBtn img {
+.accordionBtn svg {
     transition: all .4s;
 }
-.accordionBtn img.active {
-    transform: rotate(0deg);
+.accordionBtn svg.svg.active {
+    transform: rotate(270deg);
 }
 .accordionContent{
     max-height: 0;
@@ -647,7 +652,7 @@ header ul .dropdownMenu > a:hover,
 header ul li.active,
 header ul .dropdownMenu > a.active,
 .mobileMenu a.active,
-.tabs.activeو
+.tabs.active,
 .tabs2.active
 {
     color: #0B49DC!important;

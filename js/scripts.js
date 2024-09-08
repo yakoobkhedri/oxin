@@ -23,7 +23,7 @@ tabsMenu.forEach((item) => {
 })
 tabsMenu2.forEach((item) => {
   item.addEventListener('mouseenter', function () {
-      tabsMenu.forEach((items) => { items.classList.remove('active') });
+      tabsMenu2.forEach((items) => { items.classList.remove('active') });
       item.classList.add('active');
       let tabId = item.dataset.id;
       tabContent2.forEach((content) => {
@@ -144,7 +144,7 @@ let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
 accordionBtn.forEach((item)=>{
   item.addEventListener('click', function () {
     item.nextElementSibling.classList.toggle('active');
-    item.querySelector('img').classList.toggle('active');
+    item.querySelector('svg.svg').classList.toggle('active');
   })
 })
 
