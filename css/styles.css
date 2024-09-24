@@ -515,10 +515,11 @@ input {
 
 /* accordion */
 
-.accordionBtn svg {
+.accordionBtn svg:last-child {
     transition: all .4s;
+    transform: rotate(90deg);
 }
-.accordionBtn svg.svg.active {
+.accordionBtn svg:last-child.active {
     transform: rotate(270deg);
 }
 .accordionContent{
@@ -545,6 +546,12 @@ input {
 }
 #priceList .swiper-button-next {
     right: -20px;
+}
+.priceList.swiper .swiper-slide svg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
 }
 #category .swiper-button-prev2 {
     left: -70px;
@@ -877,5 +884,9 @@ header ul .dropdownMenu > a.active svg path,
     }
     .left-sm-11{
         left: -11px;
+    }
+    .priceList.swiper .swiper-slide svg{
+        width: 28px!important;
+        margin-bottom: 0;
     }
 }

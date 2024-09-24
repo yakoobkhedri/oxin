@@ -145,7 +145,7 @@ let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
 accordionBtn.forEach((item)=>{
   item.addEventListener('click', function () {
     item.nextElementSibling.classList.toggle('active');
-    item.querySelector('svg.svg').classList.toggle('active');
+    item.querySelector('svg:last-child').classList.toggle('active');
   })
 })
 
