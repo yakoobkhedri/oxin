@@ -54,7 +54,9 @@ input {
 .bg-second {
     background-color: #EA9117 !important;
 }
-
+.bg-second2{
+    background-color: #FDF4E8
+}
 .bg-gray {
     background-color: #F1F1F1;
 }
@@ -234,8 +236,14 @@ input {
 .h-42 {
     height: 42px;
 }
+.h-44 {
+    height: 44px;
+}
 .h-46 {
     height: 46px;
+}
+.h-48 {
+    height: 48px;
 }
 .h-52 {
     height: 52px;
@@ -289,6 +297,13 @@ input {
 .shadow-5{
     box-shadow: 0px 28px 24px -10px #95A3FA40;
 }
+.shadow-6{
+    box-shadow: 0px 4px 20px 0px #0000000D;
+    box-shadow: 0px 2px 4px 0px #00000014;    
+}
+.shadow-7{
+    box-shadow: 0px 4.57px 10px -2.14px #00000014;
+}
 /* rotate */
 .rotate-90 {
     transform: rotate(90deg);
@@ -300,8 +315,14 @@ input {
 .border-main{
     border: 1px solid #08349C;
 }
+.border-main2{
+    border: 1px solid #B3C7F4;
+}
  .border-2-purple{
     border: 2px solid #E7EDFC80;
+ }
+ .border-bottom-gray{
+    border-bottom: 1px solid #3A40631A;
  }
 /* rounded */
 .rounded-3px {
@@ -512,7 +533,14 @@ input {
   .form-check-input:focus {
     box-shadow: none;
   }
-
+/* paginations */
+.paginations a:hover,.paginations a.active{
+    background-color: #0B49DC;
+    color: white;
+}
+.paginations a:hover path{
+   fill: white;
+}
 /* accordion */
 
 .accordionBtn svg:last-child {
@@ -531,7 +559,44 @@ input {
 .accordionContent.active{
     max-height: 2000px;
 }
+.filterBox {
+    background-color :#062879;
+}
+.filterBox > .accordionBtn3 path {
+    fill: white;
+}
+.filterBox > .accordionBtn3 p {
+    color: white;
+}
+.filterBox.active {
+    background-color :white;
+}
+.filterBox.active > .accordionBtn3 svg:last-child path {
+    fill: #ea9117;
+}
+.filterBox.active > .accordionBtn3 svg:first-child path {
+    fill: #333333;
+}
+.filterBox.active > .accordionBtn3 p {
+    color: #000000;
+}
+.accordionBtn2 svg:last-child,.accordionBtn3 svg:last-child {
+    transition: all .4s;
+}
+.accordionBtn2 svg:last-child.active,.accordionBtn3 svg:last-child.active  {
+    transform: rotate(180deg);
+}
+.accordionContent2,.accordionContent3{
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+    margin-top: 0;
+}
 
+.accordionContent2.active,.accordionContent3.active{
+    max-height: 4000px;
+    margin-top: 1.5rem;
+}
 /* swiper */
 #banner .swiper-button-next::after,
 #banner .swiper-button-prev::after {
