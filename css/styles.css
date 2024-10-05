@@ -410,6 +410,9 @@ input {
 .-top-18 {
     top: -18px;
 }
+.top-24 {
+    top: 24px;
+}
 .-top-123 {
     top: -123px;
 }
@@ -479,7 +482,7 @@ input {
     top: 0;
     bottom: 0;
     left: 50%;
-    width: 550px;
+    width: 833px;
     height: 550px;
     margin: auto;
     background: #ea9117;
@@ -494,7 +497,7 @@ input {
     top: 0;
     bottom: 0;
     left: 50%;
-    width: 550px;
+    width: 833px;
     height: 550px;
     margin: auto;
     background: #0b49dc;
