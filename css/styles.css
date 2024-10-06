@@ -114,6 +114,9 @@ input {
 .-mt-100 {
     margin-top: -100px;
 }
+.ml-145{
+    margin-left: 145px;
+}
 .-mt-255 {
     margin-top: -255px;
 }
@@ -422,6 +425,12 @@ input {
 .-bottom-70 {
     bottom: -70px;
 }
+.bottom-99 {
+    bottom: 99px;
+}
+.-bottom-109{
+    bottom: -109px;
+}
 /* top */
 .top-auto {
     top: auto;
@@ -437,6 +446,9 @@ input {
 }
 .top-24 {
     top: 24px;
+}
+.-top-25 {
+    top: -25px;
 }
 .-top-123 {
     top: -123px;
