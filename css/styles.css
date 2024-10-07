@@ -51,6 +51,9 @@ input {
 .bg-main5{
     background-color: #8FABEF;
 }
+.bg-main6{
+    background-color: #5C85E8;
+}
 .bg-second {
     background-color: #EA9117 !important;
 }
@@ -288,6 +291,9 @@ input {
 .h-140 {
     height: 140px;
 }
+.h-177 {
+    height: 177px;
+}
 .h-213 {
     height: 213px;
 }
@@ -332,6 +338,9 @@ input {
 .shadow-8{
     box-shadow: 2px 10px 28px 0px #3C6DE326;
 }
+.shadow-9{
+    box-shadow: 0px 8px 14px -4px #110C2214;
+}
 /* rotate */
 .rotate-90 {
     transform: rotate(90deg);
@@ -351,6 +360,9 @@ input {
  }
  .border-bottom-gray{
     border-bottom: 1px solid #3A40631A;
+ }
+ .border-dashed-b{
+    border-bottom: 2px dashed #3A40631A;
  }
 /* rounded */
 .rounded-3px {
@@ -391,6 +403,9 @@ input {
 }
 .rounded-28 {
     border-radius: 28px;
+}
+.rounded-32 {
+    border-radius: 32px;
 }
 .rounded-tr-34 {
     border-top-right-radius: 34px;
@@ -673,7 +688,10 @@ input {
 #category .swiper-button-next2,
 #category .swiper-button-prev2,
 #priceList .swiper-button-next,
-#priceList .swiper-button-prev {
+#priceList .swiper-button-prev,
+.blogCategory .swiper-button-prev,
+.blogCategory .swiper-button-next
+ {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -686,7 +704,10 @@ input {
 #category .swiper-button-prev2:hover,
 #category .swiper-slide:hover > div,
 #priceList .swiper-button-next:hover,
-#priceList .swiper-button-prev:hover {
+#priceList .swiper-button-prev:hover,
+.blogCategory .swiper-button-prev:hover,
+.blogCategory .swiper-button-next:hover
+{
     background-color: #ea9117;
 }
 #category .swiper-button-next2:hover path,
@@ -696,14 +717,20 @@ input {
 #category .swiper-button-next2:hover::after,
 #category .swiper-button-prev2:hover::after,
 #priceList .swiper-button-next:hover::after,
-#priceList .swiper-button-prev:hover::after {
+#priceList .swiper-button-prev:hover::after,
+.blogCategory .swiper-button-prev:hover::after,
+.blogCategory .swiper-button-next:hover::after
+{
     color: white;
 }
 
 #category .swiper-button-next2::after,
 #category .swiper-button-prev2::after,
 #priceList .swiper-button-next::after,
-#priceList .swiper-button-prev::after {
+#priceList .swiper-button-prev::after,
+.blogCategory .swiper-button-next::after,
+.blogCategory .swiper-button-prev::after
+ {
     color: black;
     font-size: 20px;
     font-weight: bold;
@@ -738,6 +765,10 @@ input {
 }
 #priceList .swiper-slide:hover path{
     fill: #0B49DC;
+}
+.blogCategory .swiper-slide div:hover{
+    background-color:#5C85E8;
+    color: white;
 }
 /* menu */
 .dropdownBtn:hover .dropdownMenu{

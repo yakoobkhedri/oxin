@@ -137,6 +137,29 @@ var priceList= new Swiper(".priceList", {
     prevEl: ".swiper-button-prev",
   },
 });
+var blogCategory= new Swiper(".blogCategory", {
+  loop: true,
+  spaceBetween: 16,
+  slidesPerView: 2,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1300: {
+      slidesPerView: 6,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // accordion
 
