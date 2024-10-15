@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>جزئیات محصول</title>
+  <title>سبد خرید</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
@@ -375,27 +375,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="ld-form d-none">
-    <div class="ld-row">
-      <label class="ld-label">
-        Enable Polling
-      </label>
-      <input type="checkbox" checked="checked" id="enablePolling" />
-    </div>
-    <div class="ld-row">
-      <label class="ld-label">
-        Polling Time (Seconds)
-      </label>
-      <input class="ld-time-input" type="number" value="2" id="pollingTime" />
-    </div>
-    <div class="ld-row">
-      <label class="ld-label">
-        CSV URL
-      </label>
-      <input class="ld-url-input" type="text" id="fetchURL" />
     </div>
   </div>
 
@@ -955,161 +934,17 @@
   </header>
 
   <!-- main -->
-  <main>
+  <main class="position-relative">
 
-    <section>
+    <!-- empty cart -->
+    <section class="mt-2 py-3">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-12">
-            <div class="rounded-10 shadow-4 bg-white p-4 px-2 px-sm-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
-              <div class="flex-wrap d-flex align-items-center gap-3 fw-bold">
-                <a class="text-main2">خانه</a>
-                <img alt="icon" src="img/Vector.png">
-                <a class="text-main2">محصولات</a>
-                <img alt="icon" src="img/Vector.png">
-                <a class="text-main2">میلگرد</a>
-                <img alt="icon" src="img/Vector.png">
-                <a class="text-main2"> میلگرد ساده (283 محصول)</a>
-                <img alt="icon" src="img/Vector.png">
-                <p class="mb-0"> میلگرد ساده نمره 14</p>
-              </div>             
-            </div>
+        <div class="rounded-16 bg-white shadow-4 p-2 p-sm-4 pb-5 d-flex align-items-center justify-content-center">
+          <div class="text-center w-100 my-5">
+            <img alt="img" src="img/undraw_empty_cart_co35 1.png" class="img-fluid">
+            <p class="font-bold text-main2 fs-32 mt-4 mb-2 fs-sm-24">محصولی در سبد خرید شما نیست !</p>
+            <a class="text-second fs-20 font-bold">مشاهده محصولات</a>
           </div>
-          <div class="col-xl-8 col-12">
-            <div class="rounded-10 shadow-4 bg-white p-3 px-2 px-sm-4">
-              <div class="d-flex align-items-center justify-content-between gap-2 border-bottom border-3 pb-3">
-               <p class="fs-20 fw-bold text-gray mb-0">میلگرد ساده نمره 14</p>
-               <div class="d-flex align-items-center justify-content-center rounded-10 w-48 h-48 bg-main7">
-                 <img alt="icon" src="img/svg/save-2.svg">
-               </div>
-              </div>
-              <div class="row mx-0 g-4 mt-1 pb-4 border-bottom border-3">
-               <div class="col-md-3 col-6">
-                 <div class="fw-bold">
-                  <p class="text-muted mb-1">دسته بندی محصول</p>
-                  <p class="mb-0 text-main2">میلگرد</p>
-                 </div>
-                 <div class="fw-bold mt-4">
-                  <p class="text-muted mb-1">تولید کننده</p>
-                  <p class="mb-0 text-main2">میلگرد آجدار</p>
-                 </div>
-               </div>
-               <div class="col-md-3 col-6">
-                <div class="fw-bold">
-                  <p class="text-muted mb-1">محــل تحویــل</p>
-                  <p class="mb-0 text-main2">انبار</p>
-                 </div>
-                 <div class="fw-bold mt-4">
-                  <p class="text-muted mb-1">تاریخ بروزرســانی</p>
-                  <p class="mb-0 text-main2">۱۸:۰۱ - ۱۴۰۳.۰۶.۱۰</p>
-                 </div>
-               </div>
-               <div class="col-md-2 col-6">
-                <div class="fw-bold">
-                  <p class="text-muted mb-1">واحـــد خرید</p>
-                  <p class="mb-0 text-main2">کیلوگرم</p>
-                 </div>
-                 <div class="fw-bold mt-4">
-                  <p class="text-muted mb-1">کد محصول</p>
-                  <p class="mb-0 text-main2">AH16077</p>
-                 </div>
-               </div>
-               <div class="col-md-4 col-6">
-                <img alt="img" src="img/pipe-steel-construction-stack-realistic 3 (2).png" class="img-fluid w-100">
-               </div>
-              </div>
-              <div class="flex-column flex-lg-row d-flex align-items-center justify-content-between gap-4 bg-main8 px-4 py-3 mt-4">
-                <div class="w-100 flex-column flex-sm-row d-flex align-items-start gap-sm-5 gap-3">
-                  <div>
-                    <p class="font-bold text-main mb-2">آخرین تغییر قیمت</p>
-                    <div class="d-flex align-items-center gap-2">
-                      <img alt="icon" src="img/svg/Icon (2).svg">
-                      <p class="text-second fs-32 font-bold mb-0">3</p>
-                      <img alt="icon" src="img/svg/Background.svg">
-                    </div>
-                    <p class="mb-0 font-bold fs-20 text-second">920 تومان</p>
-                  </div>
-                  <div>
-                    <p class="font-bold text-main mb-3">قیمت هر کیلو</p>
-                    <div class="d-flex align-items-center gap-2 mb-2">
-                      <p class="text-secondary fs-24 font-bold mb-0">27,280</p>
-                      <img alt="icon" src="img/svg/Background (2).svg">
-                    </div>
-                    <p class="mb-0 font-bold text-main">۱۴۰۳.۰۶.۱۰ - ۱۸:۰۱</p>
-                  </div>
-                </div>
-                <a class="bg-main rounded-8 text-white button-hover-1 w-sm-100 flex-shrink-0 font-bold fs-14 py-3 px-sm-5 px-3 d-flex align-items-center justify-content-center gap-2">
-                  <p class="mb-0">ثبت سفارش محصول</p>
-                  <img alt="icon" src="img/svg/arrow-left.svg">
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-12">
-           <div class="rounded-10 shadow-4 bg-white p-3 px-2 px-sm-4 h-100">
-            <h4 class="fs-20 font-bold text-gray text-center">کارشناسان فروش محصول</h4>
-            <img alt="img" src="img/image (2).png" class="img-fluid w-100 rounded-16 mt-4">
-            <p class="fs-20 fw-bold text-gray text-center my-2">بهنوش براتی هفدانی</p>
-            <p class="fs-18 fw-bold text-main2 text-center">کارشناس فروش میلگرد</p>
-            <div class="d-flex align-items-center justify-content-between gap-2 border-top pt-4">
-              <div class="d-flex align-items-center gap-2">
-                <p class="mb-0 text-gray fw-bold">واتساپ</p>
-                <img alt="icon" src="img/svg/SVG.svg">
-              </div>
-              <a class="bg-second text-white fw-bold rounded-8 py-1 px-3 button-hover-2"><p class="mb-0">021-3343255</p></a>
-            </div>
-           </div>
-          </div>
-          <div class="col-12">
-            <div class="rounded-10 shadow-4 bg-white p-4 px-2 px-sm-4">
-              <div>
-                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 my-4">
-                  <div class="d-flex fs-sm-14 align-items-center gap-2">
-                    <img alt="icon" src="img/svg/calendar.svg">
-                    <p class="font-bold text-second mb-0">آخرین بروزرسانی :</p>
-                    <p class="font-bold mb-0">1403/12/23</p>
-                  </div>
-                  <h4 class="fs-20 font-bold mb-0 text-main2">نمودار تغییرات میلگرد ساده نمره 14</h4>
-                  <ul class="nav nav-pills border rounded-12 mb-0 p-0 fs-14 font-bold" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link text-dark py-3 active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">ماهانه</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link text-dark py-3" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">3 ماهه</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link text-dark py-3" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">سالانه</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                    <figure class="highcharts-figure">
-                      <div id="container"></div>
-                    </figure>
-                  </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                    tabindex="0">
-                    <figure class="highcharts-figure">
-                      <div id="container2"></div>
-                    </figure>
-                  </div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                    tabindex="0">
-                    <figure class="highcharts-figure">
-                      <div id="container3"></div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
         </div>
       </div>
     </section>
@@ -1378,7 +1213,6 @@
   </a>
 
   <script src='js/swiper.min.js'></script>
-  <script src='js/chart.js'></script>
   <script src='js/scripts.js'></script>
   <script src='js/bootstrap.bundle.min.js'></script>
 </body>
