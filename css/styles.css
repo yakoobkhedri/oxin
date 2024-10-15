@@ -54,6 +54,12 @@ input {
 .bg-main6{
     background-color: #5C85E8;
 }
+.bg-main7{
+    background-color: #FDF4E8;
+}
+.bg-main8{
+    background-color: #FCFDFD;
+}
 .bg-second {
     background-color: #EA9117 !important;
 }
@@ -71,7 +77,7 @@ input {
 }
 /* text color */
 .text-main {
-    color: #293268;
+    color: #3448bd;
 }
 
 .text-main2 {
@@ -373,6 +379,9 @@ input {
 }
 .rounded-5 {
     border-radius: 5px;
+}
+.rounded-8 {
+    border-radius: 8px;
 }
 .rounded-br-9 {
     border-bottom-right-radius: 9px;
@@ -957,6 +966,9 @@ header ul .dropdownMenu > a.active svg path,
     }
     .w-sm-32{
         width: 32px!important;
+    }
+    .w-sm-100{
+        width: 100%!important;
     }
     .w-sm-125{
         width: 125px!important;
