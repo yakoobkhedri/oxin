@@ -75,6 +75,9 @@ input {
 .bg-brown{
     background-color: #F8DDB7;
 }
+.bg-success2{
+    background-color: #0ED065;
+}
 /* text color */
 .text-main {
     color: #3448bd;
@@ -92,6 +95,12 @@ input {
 }
 .text-gray{
     color: #363636;
+}
+.text-gray2{
+    color: #94A1B6;
+}
+.text-success2{
+    color: #0A9448;
 }
 /* cursor */
 .cursor {
@@ -252,6 +261,9 @@ input {
 .h-5 {
     height: 5px;
 }
+.h-24 {
+    height: 24px;
+}
 .h-26 {
     height: 26px;
 }
@@ -278,6 +290,9 @@ input {
 }
 .h-52 {
     height: 52px;
+}
+.h-56 {
+    height: 56px;
 }
 .h-60 {
     height: 60px;
