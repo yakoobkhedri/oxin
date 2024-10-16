@@ -60,6 +60,9 @@ input {
 .bg-main8{
     background-color: #FCFDFD;
 }
+.bg-main9{
+    background-color: #E7EDFC;
+}
 .bg-second {
     background-color: #EA9117 !important;
 }
@@ -101,6 +104,9 @@ input {
 }
 .text-success2{
     color: #0A9448;
+}
+.text-success3{
+    color: #00966D;
 }
 /* cursor */
 .cursor {
@@ -185,6 +191,10 @@ input {
     max-width: 284px;
     width: 100%;
  }
+ .max-w-497{
+    max-width: 497px;
+    width: 100%;
+ }
  .max-w-620{
     max-width: 620px;
     width: 100%;
@@ -242,6 +252,9 @@ input {
 .w-90 {
     width: 90px !important;
 }
+.w-110 {
+    width: 110px !important;
+}
 .w-160 {
     width: 160px !important;
 }
@@ -275,6 +288,9 @@ input {
 }
 .h-38 {
     height: 38px;
+}
+.h-40 {
+    height: 40px;
 }
 .h-42 {
     height: 42px;
@@ -385,6 +401,9 @@ input {
  .border-dashed-b{
     border-bottom: 2px dashed #3A40631A;
  }
+ .border-sky{
+    border: 1px solid #B3C7F4;
+ }
 /* rounded */
 .rounded-3px {
     border-radius: 3px;
@@ -488,6 +507,9 @@ input {
 }
 .-top-25 {
     top: -25px;
+}
+.top-27 {
+    top: 27px;
 }
 .-top-123 {
     top: -123px;
@@ -612,6 +634,15 @@ input {
   .form-check-input:focus {
     box-shadow: none;
   }
+  /* input number */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
 /* paginations */
 .paginations a:hover,.paginations a.active{
     background-color: #0B49DC;
