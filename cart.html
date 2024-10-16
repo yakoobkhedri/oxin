@@ -383,15 +383,34 @@
     <div class="modal-dialog modal-dialog-centered max-w-497">
       <div class="modal-content rounded-16">
         <div class="modal-body p-4">
-          <img alt="img" src="img/Success Illustration.png" class="d-block mx-auto mt-2">
+          <img alt="img" src="img/Success Illustration.png" class="d-block mx-auto mt-2 img-fluid">
           <p class="text-success3 text-center fs-20 font-bold mt-3 mb-2">سفارش شما با موفقیت ثبت شد</p>
           <p class="fw-bold text-gray2 fs-14 text-center mb-4">
-              کد رهگیری سفارش شما:
-               ۲۳۴۵۶۷۸۹ 
+            کد رهگیری سفارش شما:
+            ۲۳۴۵۶۷۸۹
           </p>
           <a class="d-flex align-items-center justify-content-center py-2 rounded-pill btn btn-outline-warning">
-           <p class="mb-0">سفارش های من</p>
+            <p class="mb-0">سفارش های من</p>
           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- logout Modal -->
+  <div class="modal fade p-sm-4" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-428">
+      <div class="modal-content rounded-16">
+        <div class="modal-body p-4">
+          <p class="font-bold">خروج از حساب کاربری</p>
+          <p class="fs-14 font-bold mb-4">آیا برای خروج خود از برنامه اطمینان حاصل دارید؟!</p>
+          <div class="d-flex align-items-center justify-content-between gap-3">
+            <div data-bs-dismiss="modal" class="fw-bold fs-20 rounded-pill py-2 px-4 btn btn-outline-dark w-50"> انصراف</div>
+            <div data-bs-dismiss="modal" class="fw-bold fs-20 rounded-pill py-2 px-4 btn btn-danger w-50 d-flex align-items-center justify-content-center gap-1">
+              <p class="mb-0">خروج</p>
+              <img alt="img" src="img/logout (2).png">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -405,7 +424,7 @@
           src="img/svg/menu.svg" class="cursor d-xl-none">
         <a class="flex-shrink-0"><img alt="logo" src="img/photo_5911433497355075833_y 1.png"
             class="img-fluid w-sm-28 w-65"></a>
-        <ul class="fw-bold p-0 mb-0 list-unstyled d-xl-flex d-none align-items-center gap-5">
+        <ul class="fw-bold p-0 mb-0 list-unstyled d-xl-flex d-none align-items-center gap-xxl-5 gap-4">
           <li class="text-main">
             <a>خانه</a>
           </li>
@@ -935,18 +954,75 @@
           </li>
         </ul>
       </div>
-      <div class="d-flex align-items-center gap-3 gap-sm-4">
-        <a class="rounded-pill button-hover-2 h-46 bg-second d-flex align-items-center gap-3 text-white px-4">
+      <div class="d-flex align-items-center gap-1 gap-sm-4">
+        <a class="rounded-pill button-hover-2 h-46 bg-second d-xl-flex d-none align-items-center gap-3 text-white px-4">
           <p class="mb-0 fw-bold fs-sm-12">0919456789</p>
           <img alt="icon" src="img/svg/call-calling.svg">
         </a>
-        <a data-bs-toggle="modal" data-bs-target="#loginModal"
+        <!-- <a data-bs-toggle="modal" data-bs-target="#loginModal"
           class="h-46 w-46 button-hover-2 d-flex align-items-center justify-content-center rounded-circle bg-second">
           <img alt="icon" src="img/svg/user.svg">
-        </a>
+        </a> -->
+        <div class="h-46 d-flex align-items-center justify-content-center rounded-pill gap-2 px-2 bg-second3">
+          <img alt="icon" src="img/Frame 1000015023.png" class="d-block w-38 h-38 rounded-circle">
+          <li class="nav-item dropdown list-unstyled">
+            <a class="nav-link dropdown-toggle fw-bold text-second" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              حساب کاربری
+            </a>
+            <ul class="dropdown-menu list-unstyled shadow-10 bg-white p-3 rounded-25">
+              <li class="mb-4">
+                <a class="dropdown-item px-0 d-flex align-items-center justify-content-between gap-2" href="#">
+                 <div>
+                   <p class="font-bold fs-14 mb-1 text-gray2 text-end">09104992005</p>
+                   <p class="font-bold text-success4 mb-0">یعقوب خدری</p>
+                 </div>
+                 <img alt="img" src="img/Background (2).png" class="d-block w-40 h-40 rounded-16">
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li> 
+                <a class="dropdown-item p-2 rounded-8 d-flex align-items-center justify-content-between gap-2" href="#">
+                  <div>
+                     <p class="font-bold fs-14 mb-0 text-main3 text-end">مشخصات کاربری</p>
+                  </div>
+                  <img alt="img" src="img/user-square.png" class="d-block w-26 h-26 rounded-16">
+                 </a>
+              </li>
+              <li> 
+                <a class="dropdown-item p-2 rounded-8 d-flex align-items-center justify-content-between gap-2" href="#">
+                  <div>
+                     <p class="font-bold fs-14 mb-0 text-main3 text-end">سفارشات من</p>
+                  </div>
+                  <img alt="img" src="img/receipt-item.png" class="d-block w-26 h-26 rounded-16">
+                 </a>
+              </li>
+              <li> 
+                <a class="dropdown-item p-2 rounded-8 d-flex align-items-center justify-content-between gap-2" href="#">
+                  <div>
+                     <p class="font-bold fs-14 mb-0 text-main3 text-end">علاقه مندی های من</p>
+                  </div>
+                  <img alt="img" src="img/heart.png" class="d-block w-26 h-26 rounded-16">
+                 </a>
+              </li>
+              <li> 
+                <a data-bs-toggle="modal" data-bs-target="#logoutModal" class="dropdown-item p-2 rounded-8 d-flex align-items-center justify-content-between gap-2" href="#">
+                  <div>
+                     <p class="font-bold fs-14 mb-0 text-danger text-end">خروج از حساب</p>
+                  </div>
+                  <img alt="img" src="img/logout.png" class="d-block w-26 h-26 rounded-16">
+                 </a>
+              </li>
+            </ul>
+          </li>
+
+        </div>
         <a
-          class="h-46 w-46 button-hover-2 d-xl-flex d-none align-items-center justify-content-center rounded-circle bg-second">
+          class="position-relative h-46 w-46 d-flex align-items-center justify-content-center rounded-circle bg-second">
           <img alt="icon" src="img/svg/bag.svg">
+          <p class="mb-0 start-0 -top-9 position-absolute bg-main text-white h-26 w-26 font-bold fs-14 rounded-circle d-flex align-items-center justify-content-center">4</p>
         </a>
       </div>
     </div>
@@ -972,185 +1048,197 @@
       <div class="container">
         <div class="row mx-0 g-4">
           <div class="col-xl-9">
-            <div class="rounded-16 bg-white shadow-4 p-2 py-3 py-sm-4 p-sm-4 flex-column flex-lg-row d-flex align-items-end justify-content-between gap-4 gap-lg-2 mb-3">
-               <div class="flex-grow-1 w-100">
+            <div
+              class="rounded-16 bg-white shadow-4 p-2 py-3 py-sm-4 p-sm-4 flex-column flex-lg-row d-flex align-items-end justify-content-between gap-4 gap-lg-2 mb-3">
+              <div class="flex-grow-1 w-100">
                 <h3 class="font-bold fs-20 text-main mb-4"> آریان فولاد</h3>
-                <div class="row mx-0 g-sm-1 gy-4 gx-1">
-                 <div class="col-md-3 col-6">
-                   <p class="fs-14 font-bold text-gray2 mb-3">آخرین نوسان قیمت</p>
-                   <div class="d-flex align-items-center gap-2">
+                <div class="row mx-0 g-sm-1 gy-4 gy-sm-4 gx-1">
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-3">آخرین نوسان قیمت</p>
                     <div class="d-flex align-items-center gap-2">
-                      <img alt="icon" src="img/svg/Icon (5).svg">
-                     <p class="mb-0 text-danger font-bold">1%</p>
+                      <div class="d-flex align-items-center gap-2">
+                        <img alt="icon" src="img/svg/Icon (5).svg">
+                        <p class="mb-0 text-danger font-bold">1%</p>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <p class="mb-0 text-danger font-bold">136 تـومـان</p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-3">آخرین بروزرسانی قیمت</p>
                     <div class="d-flex align-items-center gap-2">
-                      <p class="mb-0 text-danger font-bold">136 تـومـان</p>
+                      <p class="mb-0 text-gray2 font-bold">17:20 - 1403/12/1</p>
                     </div>
-                   </div>
-                 </div>
-                 <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-3">آخرین بروزرسانی قیمت</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-gray2 font-bold">17:20 - 1403/12/1</p>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-2">قیمت خرید کنونی</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0 text-main2 fs-24 font-bold">26,409</p>
+                      <p class="mb-0 text-main2 fs-14 font-bold">تومان</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-2">وزن تقریبی هر شاخه</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0 text-main2 fs-24 font-bold">2,000</p>
+                      <p class="mb-0 text-main2 fs-14 font-bold">کیلوگرم</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-2">قیمت خرید کنونی</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-main2 fs-24 font-bold">26,409</p>
-                     <p class="mb-0 text-main2 fs-14 font-bold">تومان</p>
-                  </div>
-                </div>
-                <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-2">وزن تقریبی هر شاخه</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-main2 fs-24 font-bold">2,000</p>
-                     <p class="mb-0 text-main2 fs-14 font-bold">کیلوگرم</p>
-                  </div>
-                </div>
-                </div>
-               </div>
-               <form class="flex-shrink-0 w-lg-100">
-                 <div class="d-flex align-items-center gap-3">
+              </div>
+              <form class="flex-shrink-0 w-lg-100">
+                <div class="d-flex align-items-center gap-3">
                   <p class="mb-0 text-main fs-14 font-bold">واحد :</p>
                   <select class="rounded-3 border-sky bg-main9 py-2 px-3">
                     <option>شاخه</option>
                     <option>شاخه</option>
                   </select>
-                 </div>
-                 <div class="d-flex align-items-center mt-3 gap-2">
-                   <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
-                     <img alt="icon" src="img/svg/Icon (6).svg">
-                   </div>
-                   <input type="number" min="1" class="w-110 h-40 rounded-8 border-sky outline-none text-center text-main fs-20 font-bold" value="1">
-                   <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                </div>
+                <div class="d-flex align-items-center mt-3 gap-2">
+                  <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                    <img alt="icon" src="img/svg/Icon (6).svg">
+                  </div>
+                  <input type="number" min="1"
+                    class="w-110 h-40 rounded-8 border-sky outline-none text-center text-main fs-20 font-bold"
+                    value="1">
+                  <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
                     <img alt="icon" src="img/svg/Vector (2).svg">
                   </div>
-                  <div class="me-2 w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                  <div
+                    class="me-2 w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
                     <img alt="icon" src="img/svg/Icon(1).svg">
                   </div>
-                 </div>
-                </form>
+                </div>
+              </form>
             </div>
-            <div class="rounded-16 bg-white shadow-4 p-2 py-3 py-sm-4 p-sm-4 flex-column flex-lg-row d-flex align-items-end justify-content-between gap-4 gap-lg-2 mb-3">
-               <div class="flex-grow-1 w-100">
+            <div
+              class="rounded-16 bg-white shadow-4 p-2 py-3 py-sm-4 p-sm-4 flex-column flex-lg-row d-flex align-items-end justify-content-between gap-4 gap-lg-2 mb-3">
+              <div class="flex-grow-1 w-100">
                 <h3 class="font-bold fs-20 text-main mb-4"> آریان فولاد</h3>
-                <div class="row mx-0 g-sm-1 gy-4 gx-1">
-                 <div class="col-md-3 col-6">
-                   <p class="fs-14 font-bold text-gray2 mb-3">آخرین نوسان قیمت</p>
-                   <div class="d-flex align-items-center gap-2">
+                <div class="row mx-0 g-sm-1 gy-4 gy-sm-4 gx-1">
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-3">آخرین نوسان قیمت</p>
                     <div class="d-flex align-items-center gap-2">
-                      <img alt="icon" src="img/svg/Vector (3).svg">
-                     <p class="mb-0 text-success2 font-bold">1%</p>
+                      <div class="d-flex align-items-center gap-2">
+                        <img alt="icon" src="img/svg/Vector (3).svg">
+                        <p class="mb-0 text-success2 font-bold">1%</p>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <p class="mb-0 text-success2 font-bold">136 تـومـان</p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-3">آخرین بروزرسانی قیمت</p>
                     <div class="d-flex align-items-center gap-2">
-                      <p class="mb-0 text-success2 font-bold">136 تـومـان</p>
+                      <p class="mb-0 text-gray2 font-bold">17:20 - 1403/12/1</p>
                     </div>
-                   </div>
-                 </div>
-                 <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-3">آخرین بروزرسانی قیمت</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-gray2 font-bold">17:20 - 1403/12/1</p>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-2">قیمت خرید کنونی</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0 text-main2 fs-24 font-bold">26,409</p>
+                      <p class="mb-0 text-main2 fs-14 font-bold">تومان</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-2">وزن تقریبی هر شاخه</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0 text-main2 fs-24 font-bold">2,000</p>
+                      <p class="mb-0 text-main2 fs-14 font-bold">کیلوگرم</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-2">قیمت خرید کنونی</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-main2 fs-24 font-bold">26,409</p>
-                     <p class="mb-0 text-main2 fs-14 font-bold">تومان</p>
-                  </div>
-                </div>
-                <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-2">وزن تقریبی هر شاخه</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-main2 fs-24 font-bold">2,000</p>
-                     <p class="mb-0 text-main2 fs-14 font-bold">کیلوگرم</p>
-                  </div>
-                </div>
-                </div>
-               </div>
-               <form class="flex-shrink-0 w-lg-100">
-                 <div class="d-flex align-items-center gap-3">
+              </div>
+              <form class="flex-shrink-0 w-lg-100">
+                <div class="d-flex align-items-center gap-3">
                   <p class="mb-0 text-main fs-14 font-bold">واحد :</p>
                   <select class="rounded-3 border-sky bg-main9 py-2 px-3">
                     <option>شاخه</option>
                     <option>شاخه</option>
                   </select>
-                 </div>
-                 <div class="d-flex align-items-center mt-3 gap-2">
-                   <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
-                     <img alt="icon" src="img/svg/Icon (6).svg">
-                   </div>
-                   <input type="number" min="1" class="w-110 h-40 rounded-8 border-sky outline-none text-center text-main fs-20 font-bold" value="1">
-                   <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                </div>
+                <div class="d-flex align-items-center mt-3 gap-2">
+                  <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                    <img alt="icon" src="img/svg/Icon (6).svg">
+                  </div>
+                  <input type="number" min="1"
+                    class="w-110 h-40 rounded-8 border-sky outline-none text-center text-main fs-20 font-bold"
+                    value="1">
+                  <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
                     <img alt="icon" src="img/svg/Vector (2).svg">
                   </div>
-                  <div class="me-2 w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                  <div
+                    class="me-2 w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
                     <img alt="icon" src="img/svg/Icon(1).svg">
                   </div>
-                 </div>
-                </form>
+                </div>
+              </form>
             </div>
-            <div class="rounded-16 bg-white shadow-4 p-2 py-3 py-sm-4 p-sm-4 flex-column flex-lg-row d-flex align-items-end justify-content-between gap-4 gap-lg-2 mb-3">
-               <div class="flex-grow-1 w-100">
+            <div
+              class="rounded-16 bg-white shadow-4 p-2 py-3 py-sm-4 p-sm-4 flex-column flex-lg-row d-flex align-items-end justify-content-between gap-4 gap-lg-2 mb-3">
+              <div class="flex-grow-1 w-100">
                 <h3 class="font-bold fs-20 text-main mb-4"> آریان فولاد</h3>
-                <div class="row mx-0 g-sm-1 gy-4 gx-1">
-                 <div class="col-md-3 col-6">
-                   <p class="fs-14 font-bold text-gray2 mb-3">آخرین نوسان قیمت</p>
-                   <div class="d-flex align-items-center gap-2">
+                <div class="row mx-0 g-sm-1 gy-4 gy-sm-4 gx-1">
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-3">آخرین نوسان قیمت</p>
                     <div class="d-flex align-items-center gap-2">
-                      <img alt="icon" src="img/svg/Icon (5).svg">
-                     <p class="mb-0 text-danger font-bold">1%</p>
+                      <div class="d-flex align-items-center gap-2">
+                        <img alt="icon" src="img/svg/Icon (5).svg">
+                        <p class="mb-0 text-danger font-bold">1%</p>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <p class="mb-0 text-danger font-bold">136 تـومـان</p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-3">آخرین بروزرسانی قیمت</p>
                     <div class="d-flex align-items-center gap-2">
-                      <p class="mb-0 text-danger font-bold">136 تـومـان</p>
+                      <p class="mb-0 text-gray2 font-bold">17:20 - 1403/12/1</p>
                     </div>
-                   </div>
-                 </div>
-                 <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-3">آخرین بروزرسانی قیمت</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-gray2 font-bold">17:20 - 1403/12/1</p>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-2">قیمت خرید کنونی</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0 text-main2 fs-24 font-bold">26,409</p>
+                      <p class="mb-0 text-main2 fs-14 font-bold">تومان</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <p class="fs-14 font-bold text-gray2 mb-2">وزن تقریبی هر شاخه</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="mb-0 text-main2 fs-24 font-bold">2,000</p>
+                      <p class="mb-0 text-main2 fs-14 font-bold">کیلوگرم</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-2">قیمت خرید کنونی</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-main2 fs-24 font-bold">26,409</p>
-                     <p class="mb-0 text-main2 fs-14 font-bold">تومان</p>
-                  </div>
-                </div>
-                <div class="col-md-3 col-6">
-                  <p class="fs-14 font-bold text-gray2 mb-2">وزن تقریبی هر شاخه</p>
-                  <div class="d-flex align-items-center gap-2">
-                     <p class="mb-0 text-main2 fs-24 font-bold">2,000</p>
-                     <p class="mb-0 text-main2 fs-14 font-bold">کیلوگرم</p>
-                  </div>
-                </div>
-                </div>
-               </div>
-               <form class="flex-shrink-0 w-lg-100">
-                 <div class="d-flex align-items-center gap-3">
+              </div>
+              <form class="flex-shrink-0 w-lg-100">
+                <div class="d-flex align-items-center gap-3">
                   <p class="mb-0 text-main fs-14 font-bold">واحد :</p>
                   <select class="rounded-3 border-sky bg-main9 py-2 px-3">
                     <option>شاخه</option>
                     <option>شاخه</option>
                   </select>
-                 </div>
-                 <div class="d-flex align-items-center mt-3 gap-2">
-                   <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
-                     <img alt="icon" src="img/svg/Icon (6).svg">
-                   </div>
-                   <input type="number" min="1" class="w-110 h-40 rounded-8 border-sky outline-none text-center text-main fs-20 font-bold" value="1">
-                   <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                </div>
+                <div class="d-flex align-items-center mt-3 gap-2">
+                  <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                    <img alt="icon" src="img/svg/Icon (6).svg">
+                  </div>
+                  <input type="number" min="1"
+                    class="w-110 h-40 rounded-8 border-sky outline-none text-center text-main fs-20 font-bold"
+                    value="1">
+                  <div class="w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
                     <img alt="icon" src="img/svg/Vector (2).svg">
                   </div>
-                  <div class="me-2 w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
+                  <div
+                    class="me-2 w-40 h-40 cursor rounded-8 border-sky d-flex align-items-center justify-content-center">
                     <img alt="icon" src="img/svg/Icon(1).svg">
                   </div>
-                 </div>
-                </form>
+                </div>
+              </form>
             </div>
           </div>
           <div class="col-xl-3">
@@ -1165,23 +1253,28 @@
                   <p class="mb-0 fs-14">ارزش افزوده محصولات</p>
                   <p class="mb-0 font-bold">274,500</p>
                 </div>
-                <div class="mt-4 text-success2 d-flex align-items-center justify-content-between gap-2 font-bold text-gray">
+                <div
+                  class="mt-4 text-success2 d-flex align-items-center justify-content-between gap-2 font-bold text-gray">
                   <p class="mb-0 ">جمع کل</p>
                   <div class="d-flex align-items-center gap-2">
                     <p class="mb-0 fs-20">3,324,500</p>
-                    <div class="w-48 h-24 d-flex align-items-center justify-content-center bg-success2 fs-14 fw-bold text-white rounded-pill">تومان</div>
+                    <div
+                      class="w-48 h-24 d-flex align-items-center justify-content-center bg-success2 fs-14 fw-bold text-white rounded-pill">
+                      تومان</div>
                   </div>
                 </div>
                 <form class="border-top border-4 mt-4 pt-4">
-                 <div class="d-flex align-items-center justify-content-between gap-3 border rounded-8 p-3 mb-3">
-                   <input class="font-bold flex-grow-1 fs-14 border-0 w-100 outline-none" placeholder="نام و نام خانوادگی">
-                   <img alt="icon" src="img/svg/Icon (3).svg">
+                  <div class="d-flex align-items-center justify-content-between gap-3 border rounded-8 p-3 mb-3">
+                    <input class="font-bold flex-grow-1 fs-14 border-0 w-100 outline-none"
+                      placeholder="نام و نام خانوادگی">
+                    <img alt="icon" src="img/svg/Icon (3).svg">
                   </div>
                   <div class="d-flex align-items-center justify-content-between gap-3 border rounded-8 p-3">
                     <input class="font-bold flex-grow-1 fs-14 border-0 w-100 outline-none" placeholder="شماره همراه">
                     <img alt="icon" src="img/svg/Icon (4).svg">
-                   </div>
-                   <div data-bs-toggle="modal" data-bs-target="#orderModal" type="submit" class="border-0 mt-3 d-flex align-items-center justify-content-center button-hover-2 w-100 h-56 rounded-8 bg-second text-white font-bold">
+                  </div>
+                  <div data-bs-toggle="modal" data-bs-target="#orderModal" type="submit"
+                    class="border-0 mt-3 d-flex align-items-center justify-content-center button-hover-2 w-100 h-56 rounded-8 bg-second text-white font-bold">
                     <span>
                       ثبت سفارش
                     </span>
@@ -1189,7 +1282,8 @@
                 </form>
               </div>
               <p class="mb-0 text-gray2 lh-lg font-bold fs-14 mt-3">
-                با ثبت درخواست پیش فاکتور دقیق ، درخواست شما برای کارشناسان ثبت و پس از بررسی آخرین قیمت ، فاکتور را تنظیم خواهند کرد .
+                با ثبت درخواست پیش فاکتور دقیق ، درخواست شما برای کارشناسان ثبت و پس از بررسی آخرین قیمت ، فاکتور را
+                تنظیم خواهند کرد .
               </p>
             </div>
           </div>

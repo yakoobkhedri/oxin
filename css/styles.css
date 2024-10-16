@@ -69,6 +69,9 @@ input {
 .bg-second2{
     background-color: #FDF4E8
 }
+.bg-second3{
+    background-color: #F8DDB7;
+}
 .bg-gray {
     background-color: #F1F1F1;
 }
@@ -89,7 +92,9 @@ input {
 .text-main2 {
     color: #0B49DC;
 }
-
+.text-main3{
+    color: #233564;
+}
 .text-second{
     color: #EA9117;
 }
@@ -107,6 +112,9 @@ input {
 }
 .text-success3{
     color: #00966D;
+}
+.text-success4{
+    color: #3B5757;
 }
 /* cursor */
 .cursor {
@@ -191,6 +199,10 @@ input {
     max-width: 284px;
     width: 100%;
  }
+ .max-w-428{
+    max-width: 428px;
+    width: 100%;
+ }
  .max-w-497{
     max-width: 497px;
     width: 100%;
@@ -220,6 +232,9 @@ input {
 }
 .w-35 {
     width: 35px !important;
+}
+.w-38 {
+    width: 38px !important;
 }
 .w-40 {
     width: 40px !important;
@@ -377,6 +392,9 @@ input {
 }
 .shadow-9{
     box-shadow: 0px 8px 14px -4px #110C2214;
+}
+.shadow-10{
+    box-shadow: 0px 4px 4px 0px #00000014;
 }
 /* rotate */
 .rotate-90 {
@@ -826,6 +844,14 @@ input[type=number] {
     color: white;
 }
 /* menu */
+.dropdown-menu{
+    width: 264px;
+    right: -207px!important;
+    top: 15px!important;
+}
+.dropdown-toggle::after {
+    vertical-align: 0;
+}
 .dropdownBtn:hover .dropdownMenu{
     opacity: 100%;
     visibility: visible;
@@ -1082,5 +1108,9 @@ header ul .dropdownMenu > a.active svg path,
     .priceList.swiper .swiper-slide svg{
         width: 28px!important;
         margin-bottom: 0;
+    }
+    .dropdown-menu {
+      width: 222px;
+      right: -60px!important;
     }
 }
