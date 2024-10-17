@@ -160,7 +160,18 @@ var blogCategory= new Swiper(".blogCategory", {
     prevEl: ".swiper-button-prev",
   },
 });
-
+var experts= new Swiper(".experts", {
+  loop: true,
+  spaceBetween: 18,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2500,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 // accordion
 
 let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));

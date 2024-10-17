@@ -205,6 +205,10 @@ input {
     max-width: 428px;
     width: 100%;
  }
+ .max-w-450{
+    max-width: 450px;
+    width: 100%;
+ }
  .max-w-497{
     max-width: 497px;
     width: 100%;
@@ -263,6 +267,9 @@ input {
 }
 .w-52 {
     width: 52px !important;
+}
+.w-54 {
+    width: 54px !important;
 }
 .w-64 {
     width: 64px !important;
@@ -424,6 +431,9 @@ input {
 }
 .border-main2{
     border: 1px solid #B3C7F4;
+}
+.border-main3{
+    border: 1px solid #0B49DC;
 }
  .border-2-purple{
     border: 2px solid #E7EDFC80;
@@ -660,6 +670,16 @@ input {
     fill: #131944;
 }
 /* global styles */
+.otp input{
+    transition: all .1s;
+}
+.otp input:hover,.otp input:focus{
+    border: 2px solid #0B49DC;
+}
+.otp input.active{
+    border: 2px solid #0B49DC;
+    background-color: #E7EDFC;
+}
 .line{
     height: 1px;
     background-color: #E5E7EF;
@@ -799,7 +819,9 @@ input[type=number] {
 #priceList .swiper-button-next,
 #priceList .swiper-button-prev,
 .blogCategory .swiper-button-prev,
-.blogCategory .swiper-button-next
+.blogCategory .swiper-button-next,
+.experts .swiper-button-prev,
+.experts .swiper-button-next
  {
     width: 40px;
     height: 40px;
@@ -815,7 +837,9 @@ input[type=number] {
 #priceList .swiper-button-next:hover,
 #priceList .swiper-button-prev:hover,
 .blogCategory .swiper-button-prev:hover,
-.blogCategory .swiper-button-next:hover
+.blogCategory .swiper-button-next:hover,
+.experts .swiper-button-prev:hover,
+.experts .swiper-button-next:hover
 {
     background-color: #ea9117;
 }
@@ -828,7 +852,9 @@ input[type=number] {
 #priceList .swiper-button-next:hover::after,
 #priceList .swiper-button-prev:hover::after,
 .blogCategory .swiper-button-prev:hover::after,
-.blogCategory .swiper-button-next:hover::after
+.blogCategory .swiper-button-next:hover::after,
+.experts .swiper-button-prev:hover::after,
+.experts .swiper-button-next:hover::after
 {
     color: white;
 }
@@ -838,7 +864,9 @@ input[type=number] {
 #priceList .swiper-button-next::after,
 #priceList .swiper-button-prev::after,
 .blogCategory .swiper-button-next::after,
-.blogCategory .swiper-button-prev::after
+.blogCategory .swiper-button-prev::after,
+.experts .swiper-button-next::after,
+.experts .swiper-button-prev::after
  {
     color: black;
     font-size: 20px;
