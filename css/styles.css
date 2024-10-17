@@ -264,6 +264,9 @@ input {
 .w-70 {
     width: 70px !important;
 }
+.w-86 {
+    width: 86px !important;
+}
 .w-90 {
     width: 90px !important;
 }
@@ -300,6 +303,9 @@ input {
 }
 .h-35 {
     height: 35px;
+}
+.h-36 {
+    height: 36px;
 }
 .h-38 {
     height: 38px;
@@ -651,6 +657,17 @@ input {
   }
   .form-check-input:focus {
     box-shadow: none;
+  }
+  .form-control:focus{
+    box-shadow: none;
+  }
+  .table-striped > tbody > tr:nth-of-type(2n+1) {
+    --bs-table-accent-bg: #F4F7FB;
+    color: var(--bs-table-striped-color);
+  }
+  .table-striped > tbody > tr {
+    --bs-table-accent-bg: #F6FAFB;
+    color: var(--bs-table-striped-color);
   }
   /* input number */
 input[type=number]::-webkit-inner-spin-button {
