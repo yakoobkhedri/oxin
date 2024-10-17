@@ -211,6 +211,10 @@ input {
     max-width: 620px;
     width: 100%;
  }
+ .max-w-714{
+    max-width: 714px;
+    width: 100%;
+ }
  .max-w-950{
     max-width: 950px;
     width: 100%;
@@ -224,6 +228,9 @@ input {
     width: 100%;
  }
  /* width */
+ .w-16 {
+    width: 16px !important;
+   }
  .w-26 {
      width: 26px !important;
     }
@@ -427,6 +434,12 @@ input {
  }
  .border-sky{
     border: 1px solid #B3C7F4;
+ }
+ .border-r-sky{
+    border-right: 1px solid #B3C7F4;
+ }
+ .border-l-sky{
+    border-left: 1px solid #B3C7F4;
  }
 /* rounded */
 .rounded-3px {
